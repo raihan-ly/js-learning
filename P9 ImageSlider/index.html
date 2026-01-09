@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageSlider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="relative w-full m-auto overflow-hidden">
+        <div class="slides">
+            <img src="image1.jpeg" alt="" class="w-full hidden">
+            <img src="image2.jpeg" alt="" class="w-full hidden">
+            <img src="image3.jpeg" alt="" class="w-full hidden">
+        </div>
+        <button class="left-0 py-2 px-4 absolute top-1/2 translate-y-1/2 text-4xl bg-gray-300 text-white"
+            onclick="prevSlide()">&#10094</button>
+        <button class="right-0 py-2 px-4 absolute top-1/2 translate-y-1/2 text-4xl bg-gray-300 text-white"
+            onclick="nextSlide()">&#10095</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

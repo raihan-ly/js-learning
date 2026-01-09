@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="flex justify-center items-center h-screen">
+    <div class="font-sans bg-neutral-800 rounded-lg max-w-lg overflow-hidden" id="calculator">
+        <input class="w-full p-5 text-7xl text-left bg-neutral-700 text-white" type="text" name="" id="display"
+            readonly>
+        <div class="grid grid-cols-4 gap-2.5 p-6" id="keys">
+            <button
+                class="w-24 h-24 rounded-full bg-orange-500 text-white text-5xl font-bold pointer hover:bg-orange-400 active:bg-orange-300"
+                onclick="appendToDisplay('+')">+</button>
+            <button
+                class="w-24 h-24 rounded-full bg-neutral-700 text-white text-5xl font-bold pointer hover:bg-neutral-600 active:bg-neutral-500"
+                onclick="appendToDisplay('7')">7</button>
+            <button
+                class="w-24 h-24 rounded-full bg-neutral-700 text-white text-5xl font-bold pointer hover:bg-neutral-600 active:bg-neutral-500"
+                onclick="appendToDisplay('8')">8</button>
+            <button
+                class="w-24 h-24 rounded-full bg-neutral-700 text-white text-5xl font-bold pointer hover:bg-neutral-600 active:bg-neutral-500"
+                onclick="appendToDisplay('9')">9</button>
+            <button
+                class="w-24 h-24 rounded-full bg-orange-500 text-white text-5xl font-bold pointer hover:bg-orange-400 active:bg-orange-300"
+                onclick="appendToDisplay('-')">-</button>
+            <button
+                class="w-24 h-24 rounded-full bg-neutral-700 text-white text-5xl font-bold pointer hover:bg-neutral-600 active:bg-neutral-500"
+                onclick="appendToDisplay('4')">4</button>
+            <button
+                class="w-24 h-24 rounded-full bg-neutral-700 text-white text-5xl font-bold pointer hover:bg-neutral-600 active:bg-neutral-500"
+                onclick="appendToDisplay('5')">5</button>
+            <button
+                class="w-24 h-24 rounded-full bg-neutral-700 text-white text-5xl font-bold pointer hover:bg-neutral-600 active:bg-neutral-500"
+                onclick="appendToDisplay('6')">6</button>
+            <button
+                class="w-24 h-24 rounded-full bg-orange-500 text-white text-5xl font-bold pointer hover:bg-orange-400 active:bg-orange-300"
+                onclick="appendToDisplay('*')">*</button>
+            <button
+                class="w-24 h-24 rounded-full bg-neutral-700 text-white text-5xl font-bold pointer hover:bg-neutral-600 active:bg-neutral-500"
+                onclick="appendToDisplay('1')">1</button>
+            <button
+                class="w-24 h-24 rounded-full bg-neutral-700 text-white text-5xl font-bold pointer hover:bg-neutral-600 active:bg-neutral-500"
+                onclick="appendToDisplay('2')">2</button>
+            <button
+                class="w-24 h-24 rounded-full bg-neutral-700 text-white text-5xl font-bold pointer hover:bg-neutral-600 active:bg-neutral-500"
+                onclick="appendToDisplay('3')">3</button>
+            <button
+                class="w-24 h-24 rounded-full bg-orange-500 text-white text-5xl font-bold pointer hover:bg-orange-400 active:bg-orange-300"
+                onclick="appendToDisplay('/')">/</button>
+            <button
+                class="w-24 h-24 rounded-full bg-neutral-700 text-white text-5xl font-bold pointer hover:bg-neutral-600 active:bg-neutral-500"
+                onclick="appendToDisplay('0')">0</button>
+            <button
+                class="w-24 h-24 rounded-full bg-neutral-700 text-white text-5xl font-bold pointer hover:bg-neutral-600 active:bg-neutral-500"
+                onclick="appendToDisplay('.')">.</button>
+            <button
+                class="w-24 h-24 rounded-full bg-neutral-700 text-white text-5xl font-bold pointer hover:bg-neutral-600 active:bg-neutral-500"
+                onclick="calculate()">=</button>
+            <button
+                class="w-24 h-24 rounded-full bg-orange-500 text-white text-5xl font-bold pointer hover:bg-orange-400 active:bg-orange-300f"
+                onclick="clearDisplay()">C</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
